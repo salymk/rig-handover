@@ -20,6 +20,8 @@ export type NightDigest = {
   /** Sorted by job, so the page and the JSON share one order. */
   rows: DigestRow[];
   badLines: number;
+  /** Parsed lines by status. The board shows these beside each night. */
+  counts: { ok: number; retry: number; fail: number };
 };
 
 /** Missing file returns null. An empty file returns no rows and zero bad lines. */
