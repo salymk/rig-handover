@@ -25,6 +25,4 @@ export type NightDigest = {
 };
 
 /** Missing file returns null. An empty file returns no rows and zero bad lines. */
-export function readNight(runsDir: string, night: string): NightDigest | null {
-  throw new Error(`readNight(${runsDir}, ${night}) is not implemented`);
-}
+export { readNight } from './read.js';
